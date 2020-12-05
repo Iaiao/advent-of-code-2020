@@ -2,7 +2,10 @@ use std::ops::RangeInclusive;
 
 fn main() {
     println!("Part 1: {}", solve(include_str!("input").lines().collect()));
-    println!("Part 2: {}", solve_2(include_str!("input").lines().collect()));
+    println!(
+        "Part 2: {}",
+        solve_2(include_str!("input").lines().collect())
+    );
 }
 
 fn solve(passwords: Vec<&str>) -> usize {
